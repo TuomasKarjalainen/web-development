@@ -1,0 +1,28 @@
+version: '3.3'  
+
+
+services:
+  hello-service:
+    build: ./service1  
+    hostname: hello-service
+    ports:
+      - 5050:5050  
+    networks:
+      sample:
+        aliases:
+          - hello-service
+
+  cowsay-service:
+    build: ./service2
+    hostname: cowsay-service
+    ports:
+      - 5051:5051  
+    depends_on:
+      - hello-service                             
+    networks:
+      sample:
+        aliases:
+          - cowsay-service
+
+networks:
+  sample:

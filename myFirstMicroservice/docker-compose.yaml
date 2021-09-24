@@ -1,0 +1,9 @@
+version: '3.3'
+
+services: 
+  ms-thomas:
+    build: ./mikropalvelu
+    hostname: ms-thomas
+    ports:
+      - 8000:8000
+   

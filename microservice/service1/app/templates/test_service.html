@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <h1>The cow says:</h1>
+      <h3>Get message from the other microservice (cowsay-service)</h3>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+   </head>>
+
+   <body>
+
+
+      {% for category, message in get_flashed_messages(with_categories=true) %}
+
+
+      <ul>
+         <div style="color: {{ category }}">
+            <pre>
+               <!-- ---------------------------------------- -->
+               {{ message }}
+               <!-- ---------------------------------------- -->
+                     <!-- \   ^__^ -->
+                      <!-- \  (oo)\_______ -->
+                         <!-- (__)\ 0   0 )\  * -->
+                              <!-- ||--0-w | \/ -->
+                              <!-- ||     || -->
+            </pre>  
+         </div>
+      </ul>
+
+      {% endfor %}
+
+        <form action="" method="POST">
+        <input class="button" type="submit" name="submit_button" value="Reset">
+        <input class="button" type="submit" name="submit_button" value="Get Message">
+        </form>
+   </body>
+</html>

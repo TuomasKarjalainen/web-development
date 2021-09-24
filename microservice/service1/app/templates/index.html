@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      <h1>My first microservice</h1>
+      <h3>Service is up and running</h3>   
+   </head>
+
+   <body>
+   <form action="" method="POST">
+      <input class="button"  type="submit" name="submit_button" value="Test connection">
+      <input class="button"  type="submit" name="submit_button" value="SwaggerAPI">
+   </form>
+
+   {% for category, message in get_flashed_messages(with_categories=true) %}
+
+
+   <div  style="color: {{ category }}">
+      <pre>
+         ----------------------------------------
+         {{ message }}
+         ----------------------------------------
+         \
+          \
+            ^__^
+            (oo)\_______
+            (__)\ 0   0 )\  *
+                ||--0-w | \/
+                ||     ||
+      </pre>
+   </div>
+               
+   <form action="" method="POST">
+      <input class="button" type="submit" name="submit_button" value="reset">
+   </form>
+      
+   {% endfor %}
+
+   </body>
+</html>

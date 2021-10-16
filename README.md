@@ -1,16 +1,17 @@
 # Web-sovellusten kehittäminen
 
 ### My first microservice
-Yksinkertainen mikropalvelu-arkkitehtuuriin perustuva webbisovellus
+Microservice architecture based web applications
 
-Rajapinnat ja serverit:
+REST-API and Servers:
 - Python (Flask), Docker
 
-Tyylittely ja ulkomuoto
-- html, css
+Style and appearance
+- HTML, CSS
 
-### REST-rajapinta Swagger editorilla
-Ensimmäinen versioni mikropalvelusta ei kuitenkaan ollutkaan se kaikkein yksinkertaisin versio eli MVP, joten tätä toista tehtävää varten teinkin uuden mikropalvelun (myFirstMicroservice). Tämä on aiempaa (microservice) hieman yksinkertaistetumpi versio, koska tässä on vain yksi Docker-kontti ja yksi palvelin. Lisäksi tämä versio sisältää HTTP-metodeista pelkästään GET:in. Koska ensimmäinen versio sisälsi myös POST-metodeja, tuli Swagger Editorissa tenkkapoota, koska sen käyttö oli minulla uutta.
+
+-  REST-API with Swagger-UI
+
 
 
 

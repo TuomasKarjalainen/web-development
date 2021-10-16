@@ -3,7 +3,7 @@
 ### My first microservice
 Microservice architecture based web applications
 
-#### REST-API and Servers:
+#### REST-API and servers:
 - Python (Flask), Docker
 
 #### Style and appearance
